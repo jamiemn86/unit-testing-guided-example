@@ -5,7 +5,7 @@ function sum(a, b) {
     return a + 0;
   } else if (typeof b === 'undefined' && typeof a === 'undefined') {
     return 0;
-  } else if (b === null && a === null) {
+  } else if (b === undefined && a === undefined) {
     return 0;
   } else {
     return a + b;
