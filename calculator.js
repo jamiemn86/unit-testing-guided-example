@@ -1,23 +1,21 @@
 function sum(a, b) {
-  if (typeof a === 'undefined') {
-    return 0 + b;
+  if (typeof a === 'undefined' && typeof b === 'undefined') {
+    return 0;
   } else if (typeof b === 'undefined') {
     return a + 0;
-  } else if (typeof b === 'undefined' && typeof a === 'undefined') {
-    return 0;
-  } else if (b === undefined && a === undefined) {
-    return 0;
+  } else if (typeof a === 'undefined') {
+    return b + 0;
   } else {
     return a + b;
   }
 }
 
 function subtract(a, b) {
-  if (typeof a === 'undefined') {
-    return b;
+  if (typeof a === 'undefined' && typeof b === 'undefined') {
+    return 0;
   } else if (typeof b === 'undefined') {
     return a;
-  } else if (typeof b === 'undefined' && typeof a === 'undefined') {
+  } else if (typeof a === 'undefined') {
     return 0;
   } else {
     return a - b;
