@@ -1,5 +1,13 @@
 function sum(a, b) {
-  return;
+  if (typeof a === 'undefined') {
+    return 0 + b;
+  } else if (typeof b === 'undefined') {
+    return a + 0;
+  } else if (typeof b === 'undefined' && typeof a === 'undefined') {
+    return 0;
+  } else {
+    return a + b;
+  }
 }
 
 function subtract(a, b) {
