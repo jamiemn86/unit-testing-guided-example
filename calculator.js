@@ -42,3 +42,5 @@ function multiply(a, b) {
 
 // The following is required to make unit tests work. Please ignore it.
 module.exports = { sum, subtract, divide, multiply };
+
+//Repushing to Github to enable automated tests
